@@ -1,0 +1,21 @@
+﻿@model CustomModelBinder.Models.Animal
+
+<div class="animal">
+    <h4>@Model.Name (Animal)</h4>
+    <div>@(Model.GetType())</div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Name)</dt>
+        <dd>@Html.DisplayFor(model => model.Name)</dd>
+        <dt>@Html.DisplayNameFor(model => model.Color)</dt>
+        <dd>@Html.DisplayFor(model => model.Color)</dd>
+        <dt>@Html.DisplayNameFor(model => model.Legs)</dt>
+        <dd>@Html.DisplayFor(model => model.Legs)</dd>
+
+        @if (Model.Pests != null && Model.Pests.Count() > 0)
+        {
+            <dt>Pests</dt>
+            <dd>@Html.DisplayFor(f => f.Pests)</dd>
+        }
+    </dl>
+</div>
