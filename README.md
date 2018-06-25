@@ -6,7 +6,7 @@ Multi-Tenant Area-based MVC Hosting Site:
 - Host multiple websites (domains) using one host application
 - Use LESS Styling architechture
 - Create set of Root-bundles that each tenant can use
-- Use inheritance for Domain Modelling to access database (Code-First)
+- Use inheritance for Domain Modelling to access, maintain & migrate database (Code-First)
   - Optional Database-First for Tenant
   - Override / Extend ability for Tenants
 - Maintain most of the MVC5 functionality for easy development
