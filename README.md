@@ -4,13 +4,11 @@ Multi-Tenant Area-based MVC Hosting Site:
 ## The Goal:
 
 - Host multiple websites (domains) using one host application (which enables infinite scaling !!)
-- Use LESS Styling architechture
-- Create set of Root-bundles that each tenant can use
 - Use inheritance for Domain Modelling to access, maintain & migrate database (Code-First)
   - Optional Database-First for Tenant
   - Override / Extend ability for Tenants
 - Maintain most of the MVC5 functionality for easy development
-- Use Display-Template to make page layouts and enable reusable code
+- Use Display-Templates to make page layouts and enable reusable code
 
 #### Domain Routing
 The custom domain-router translates a Domain into an Area:
