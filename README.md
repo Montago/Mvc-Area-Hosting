@@ -3,7 +3,7 @@ Multi-Tenant Area-based MVC Hosting Site:
 
 ## The Goal:
 
-- Host multiple websites (domains) using one host application
+- Host multiple websites (domains) using one host application (which enables infinite scaling !!)
 - Use LESS Styling architechture
 - Create set of Root-bundles that each tenant can use
 - Use inheritance for Domain Modelling to access, maintain & migrate database (Code-First)
