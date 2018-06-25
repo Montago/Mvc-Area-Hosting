@@ -12,7 +12,7 @@ Multi-Tenant Area-based MVC Hosting Site:
 - Maintain most of the MVC5 functionality for easy development
 
 
-#### Setup
+### Setup
 
 ##### IIS
 Add a single Web-Application to IIS that points to the host site, but setup bindings for each domain that the application needs to host.
