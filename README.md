@@ -10,6 +10,7 @@ Multi-Tenant Area-based MVC Hosting Site:
   - Optional Database-First for Tenant
   - Override / Extend ability for Tenants
 - Maintain most of the MVC5 functionality for easy development
+- Use Display-Template to make page layouts and enable reusable code
 
 #### Domain Routing
 The custom domain-router translates a Domain into an Area:
