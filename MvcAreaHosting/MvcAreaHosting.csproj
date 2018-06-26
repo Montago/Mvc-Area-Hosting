@@ -214,12 +214,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Areas\DomainArea1\AreaRegistration.cs" />
     <Compile Include="Areas\DomainArea1\BundleConfig.cs" />
     <Compile Include="Areas\DomainArea1\Controllers\HelloController.cs" />
     <Compile Include="Areas\DomainArea1\Controllers\HomeController.cs" />
     <Compile Include="Areas\DomainArea1\Models\DomainArea1Context.cs" />
     <Compile Include="Areas\DomainArea1\RouteConfig.cs" />
-    <Compile Include="Areas\DomainArea1\DomainArea1AreaRegistration.cs" />
     <Compile Include="BaseModels\Accounting\Customer.cs" />
     <Compile Include="BaseModels\Address\Address.cs" />
     <Compile Include="BaseModels\BaseContext.cs" />
