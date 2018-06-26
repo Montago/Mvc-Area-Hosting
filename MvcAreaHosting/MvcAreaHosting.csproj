@@ -214,12 +214,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="Areas\Wissenberg\BundleConfig.cs" />
-    <Compile Include="Areas\Wissenberg\Controllers\HelloController.cs" />
-    <Compile Include="Areas\Wissenberg\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Wissenberg\Models\WissenbergContext.cs" />
-    <Compile Include="Areas\Wissenberg\RouteConfig.cs" />
-    <Compile Include="Areas\Wissenberg\WissenbergAreaRegistration.cs" />
+    <Compile Include="Areas\DomainArea1\BundleConfig.cs" />
+    <Compile Include="Areas\DomainArea1\Controllers\HelloController.cs" />
+    <Compile Include="Areas\DomainArea1\Controllers\HomeController.cs" />
+    <Compile Include="Areas\DomainArea1\Models\DomainArea1Context.cs" />
+    <Compile Include="Areas\DomainArea1\RouteConfig.cs" />
+    <Compile Include="Areas\DomainArea1\DomainArea1AreaRegistration.cs" />
     <Compile Include="BaseModels\Accounting\Customer.cs" />
     <Compile Include="BaseModels\Address\Address.cs" />
     <Compile Include="BaseModels\BaseContext.cs" />
@@ -241,7 +241,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Areas\Wissenberg\Styling\area.less" />
+    <None Include="Areas\DomainArea1\Styling\area.less" />
     <None Include="BaseStyling\bootstrap.less" />
     <Content Include="BaseStyling\site.css">
       <DependentUpon>root.less</DependentUpon>
@@ -254,12 +254,12 @@
     <Content Include="favicon.ico" />
     <Content Include="BaseStyling\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Areas\Wissenberg\Views\web.config" />
-    <Content Include="Areas\Wissenberg\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Wissenberg\Views\Shared\Override.cshtml" />
-    <Content Include="Areas\Wissenberg\Views\Hello\Index.cshtml" />
-    <Content Include="Areas\Wissenberg\Views\Hello\Test.cshtml" />
-    <Content Include="Areas\Wissenberg\Views\Home\Index.cshtml" />
+    <Content Include="Areas\DomainArea1\Views\web.config" />
+    <Content Include="Areas\DomainArea1\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\DomainArea1\Views\Shared\Override.cshtml" />
+    <Content Include="Areas\DomainArea1\Views\Hello\Index.cshtml" />
+    <Content Include="Areas\DomainArea1\Views\Hello\Test.cshtml" />
+    <Content Include="Areas\DomainArea1\Views\Home\Index.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -318,8 +318,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Wissenberg\Migrations\" />
-    <Folder Include="Areas\Wissenberg\ViewModels\" />
+    <Folder Include="Areas\DomainArea1\Migrations\" />
+    <Folder Include="Areas\DomainArea1\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BaseStyling\fonts\glyphicons-halflings-regular.woff" />
