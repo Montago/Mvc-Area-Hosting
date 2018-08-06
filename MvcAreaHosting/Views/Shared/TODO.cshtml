@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/BaseStyle")
+    @Styles.Render("~/" + HttpContext.Current.Request.RequestContext.RouteData.DataTokens["area"])
+    @Scripts.Render("~/Modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("Home/Index", "Index", "Home")
+
+                @Html.ActionLink("Home/Index", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                @Html.ActionLink("Hello/Test", "Test", "Hello", new { area = "" }, new { @class = "navbar-brand" })
+
+                <a href="/Hello/Test" class="navbar-brand">Old Link</a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <ul>
+            <li>
+                <a href="https://weblogs.asp.net/imranbaloch/view-engine-with-dynamic-view-location">A Custom View Engine with Dynamic View Location</a>
+            </li>
+            <li>
+                <a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas">Areas in ASP.NET Core</a>
+            </li>
+            <li>
+                <a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/advanced/custom-model-binding">Custom Model Binding in ASP.NET Core</a>
+            </li>
+            <li>
+                <a href="http://lesscss.org/features/">Learn LESS</a>
+            </li>
+            <li>
+                <a href="http://www.mintydog.com/2012/03/serving-favicons-based-on-domain/">Favicon per Domain</a>
+            </li>
+            <li>
+                <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection">Dependency injection in ASP.NET Core</a>
+            </li>
+            <li>
+                <a href="https://msdn.microsoft.com/en-us/library/dn223671(v=pandp.30).aspx">Developer's Guide to Dependency Injection Using Unity</a>
+            </li>
+            <li>
+                <a href="https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-dependency-injection">ASP.NET MVC 4 Dependency Injection</a>
+            </li>
+            <li>
+                <a href="https://azure.microsoft.com/en-us/services/application-insights/">Azure Application Insight</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/8546257/is-it-possible-to-change-the-location-of-the-ef-migrations-migrations-folder">Custom Migration Destination</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/13469881/how-do-i-enable-ef-migrations-for-multiple-contexts-to-separate-databases">Multiple Migration</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/2165926/map-a-domain-to-an-mvc-area">Map URL to Area usin ARR</a>
+            </li>
+            <li>
+                <a href="http://www.entityframeworktutorial.net/code-first/inverseproperty-dataannotations-attribute-in-code-first.aspx">Code First Tutorial</a>
+            </li>
+            <li>
+                <a href="http://www.entityframeworktutorial.net/code-first/inverseproperty-dataannotations-attribute-in-code-first.aspx">Portable Areas + Fix</a>
+            </li>
+            <li>
+                <a href="https://elegantcode.com/2012/04/06/mvc-portable-areas/">Portable Areas</a>
+            </li>
+            <li>
+                <a href="https://www.infragistics.com/community/blogs/b/devtoolsguy/posts/12-tips-to-increase-the-performance-of-asp-net-application-drastically-part-1">Improve MVC Performance</a>
+            </li>
+            <li>
+                <a href="https://www.mikesdotnetting.com/article/164/nested-layout-pages-with-razor">Nested Layout</a>
+            </li>
+            <li>
+                <a href="http://ideafromtheweb.com/how-to/create-new-areas-separate-project-asp-net-mvc/">Area in Separate Project</a>
+            </li>
+        </ul>
+
+        <h3>Maybe... </h3>
+        <ul>
+            <li>
+                <a href="https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application">Generic Repository pattern</a>
+            </li>
+            <li>
+                <a href="https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/how-to-implement-the-repository-pattern-in-asp-net-mvc-application">Generic Repository pattern 2</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/27527757/ef6-code-first-with-generic-repository-and-dependency-injection-and-soc">Generic Repo with DI</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/2140208/how-to-set-a-default-route-to-an-area-in-mvc">Area Aware View Engine</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>Add-Migration Initialize -ConfigurationTypeName WissenbergConfiguration</li>
+            <li>todo: make migration / tables better</li>
+            <li>todo: make base-display templates work....</li>
+            <li>todo: use sql server instead of localdb..</li>
+            <li>todo: figure out if DB-per-Area is better than Schema-per-area in one DB...</li>
+        </ul>
+
+        @RenderBody()
+
+        @(HttpContext.Current.Request.Url)
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

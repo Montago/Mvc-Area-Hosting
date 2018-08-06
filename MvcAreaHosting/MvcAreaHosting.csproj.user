@@ -14,7 +14,7 @@
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <NameOfLastUsedPublishProfile>ModelBinder - Web Deploy</NameOfLastUsedPublishProfile>
     <WebStackScaffolding_AreaDialogWidth>600,208695652174</WebStackScaffolding_AreaDialogWidth>
     <Controller_SelectedScaffolderID>MvcControllerEmptyScaffolder</Controller_SelectedScaffolderID>

@@ -315,6 +315,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\DisplayTemplates\Customer.cshtml" />
     <Content Include="Views\Shared\Webshop.cshtml" />
+    <Content Include="Views\Shared\TODO.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
