@@ -16,5 +16,10 @@ namespace MvcAreaHosting.Areas.DomainArea1.Controllers
         {
             return View();
         }
+        public string splat(int id)
+        {
+            return "hello this is " + id;
+        }
     }
+
 }

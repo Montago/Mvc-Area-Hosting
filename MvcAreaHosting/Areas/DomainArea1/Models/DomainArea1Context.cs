@@ -6,14 +6,6 @@ using System.Data.Entity.Migrations;
 
 namespace MvcAreaHosting.Areas.DomainArea1.Models
 {
-    /*****************************************************************
-        Inherit and Improve Article class
-    *****************************************************************/
-    public class BetterArticle : Article
-    {
-        public int OneMoreProp { get; set; }
-    }
-
     public class DomainArea1Context : BaseContext
     {
         /*****************************************************************
@@ -48,4 +40,13 @@ namespace MvcAreaHosting.Areas.DomainArea1.Models
             //  DbSet<T>.AddOrUpdate()
         }
     }
+
+    /*****************************************************************
+       Inherit and Improve Article class
+   *****************************************************************/
+    public class BetterArticle : Article
+    {
+        public int OneMoreProp { get; set; }
+    }
+
 }

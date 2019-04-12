@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/BaseStyle")
-    @Styles.Render("~/" + HttpContext.Current.Request.RequestContext.RouteData.DataTokens["area"])
+    <style>
+        body {
+            background-color: darkred;
+            color: white;
+        }
+    </style>
     @Scripts.Render("~/Modernizr")
 </head>
 <body>
